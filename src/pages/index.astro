@@ -1,0 +1,881 @@
+---
+import Layout from "../layouts/Layout.astro";
+const skills = [
+  "Windows 11",
+  "Ubuntu / Linux",
+  "Sistemas microinformáticos",
+  "Montaje y reparación de ordenadores",
+  "Mantenimiento de equipos",
+  "Seguridad informática",
+  "Redes departamentales",
+  "Voz y datos",
+  "Active Directory",
+  "PowerShell",
+  "Bases de datos",
+  "Programación orientada a objetos",
+  "HTML",
+  "CSS",
+  "SASS",
+  "Bootstrap",
+  "Ofimática",
+];
+const studies = [
+  [
+    "Grado Medio en Sistemas Microinformáticos y Redes",
+    "2009–2014",
+    "Formación profesional en sistemas microinformáticos y redes.",
+  ],
+  [
+    "Sistemas Microinformáticos",
+    "560 horas · 2014–2015",
+    "Formación técnica en sistemas microinformáticos.",
+  ],
+  [
+    "Operaciones de Sistemas Informáticos",
+    "560 horas · 2018",
+    "Formación relacionada con operaciones y reparación de aplicaciones de PC.",
+  ],
+  [
+    "Montaje y Reparación de Sistemas Microinformáticos",
+    "470 horas · 2018–2019",
+    "Montaje y reparación de ordenadores.",
+  ],
+  [
+    "Grado Superior de Informática – Desarrollo de Aplicaciones Web",
+    "2019–2020 · Estudios no finalizados",
+    "Estudios cursados; no se presenta como titulación finalizada.",
+  ],
+  [
+    "Operación de Redes Departamentales",
+    "600 horas · 2021",
+    "Formación en redes departamentales y entornos de oficina.",
+  ],
+  [
+    "Operación en Sistemas de Comunicaciones de Voz y Datos",
+    "550 horas · 2022–2023",
+    "Formación en comunicaciones de voz y datos.",
+  ],
+  [
+    "Sistemas Microinformáticos",
+    "550 horas · 2023",
+    "Formación y prácticas relacionadas con la reparación de ordenadores.",
+  ],
+  [
+    "Seguridad Informática",
+    "90 horas · 2025",
+    "Formación en seguridad de sistemas informáticos.",
+  ],
+  [
+    "Programación Orientada a Objetos y Bases de Datos",
+    "150 horas · 2025",
+    "Formación en programación y bases de datos.",
+  ],
+  [
+    "Operaciones Auxiliares de Servicios Administrativos y Generales",
+    "2025",
+    "Formación complementaria en tareas administrativas.",
+  ],
+];
+const courses = [
+  "Iniciación a la creación de páginas web · 2020",
+  "Web 2.0 y Redes Sociales · 2018",
+  "Active Directory y Nuevas Tecnologías · 2018",
+  "AutoCAD y PowerShell · 2018",
+  "Ofimática · 2017",
+  "Adobe Photoshop y SketchUp · 2016–2017",
+];
+const creative = [
+  "Grado Superior de Artes Gráficas – Diseño y Edición de Publicaciones Impresas y Multimedia · 2026–Actualidad",
+  "Desarrollo de Aplicaciones con Tecnologías Web · 590 horas · 2023–2024",
+  "Confección y Publicación de Páginas Web · 490 horas · 2023–2024",
+  "Montaje y Postproducción de Audiovisuales · 510 horas · 2024",
+  "Operaciones de Grabación y Tratamiento de Datos y Documentos · 470 horas · 2025",
+  "Ilustración · 750 horas · 2021–2022",
+  "Desarrollo de Productos Editoriales Multimedia · 570 horas · 2021",
+  "Grado Medio de Artes Gráficas – Preimpresión Digital · 2015–2017",
+];
+const projects = [
+  [
+    "01",
+    "Montaje y mantenimiento",
+    "Conocimientos de montaje, reparación y puesta a punto de ordenadores y sistemas microinformáticos.",
+    ["Hardware", "Mantenimiento", "Windows"],
+  ],
+  [
+    "02",
+    "Sistemas y redes",
+    "Formación en redes departamentales y sistemas de comunicaciones de voz y datos.",
+    ["Redes", "Voz y datos", "Sistemas"],
+  ],
+  [
+    "03",
+    "Desarrollo web",
+    "Creación de páginas web y aplicaciones utilizando tecnologías web y herramientas frontend.",
+    ["HTML", "CSS", "SASS", "Bootstrap"],
+  ],
+];
+---
+
+<Layout title="Antonio Oyuela | Técnico Informático">
+  <header class="nav no-print">
+    <div class="container navin">
+      <a class="brand" href="#inicio">
+        <b>AO</b> Antonio<span class="accent">.tech</span>
+      </a>
+      <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="menu" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">● TÉCNICO INFORMÁTICO · MADRID</span>
+          <h1>
+            ANTONIO
+            <br />
+            <span class="gradient">OYUELA</span>
+          </h1>
+          <h2>
+            Técnico Informático <span class="accent">|</span> Sistemas, Redes y
+            Soporte
+          </h2>
+          <p class="intro">
+            Perfil técnico con formación en sistemas microinformáticos, montaje
+            y reparación de equipos, redes, seguridad informática y desarrollo
+            web. También cuento con formación complementaria en artes gráficas y
+            creación de contenido digital.
+          </p>
+          <div class="actions no-print">
+            <a class="btn" href="#contacto">
+              Contactar ↗
+            </a>
+            <button class="btn alt" id="print">
+              Guardar CV en PDF ↓
+            </button>
+          </div>
+          <div class="quick">
+            <span>⌖ Madrid, España</span>
+            <span>✉ antoniooyuelasanchez@gmail.com</span>
+            <span>☎ 628 199 112</span>
+          </div>
+        </div>
+        <aside class="terminal">
+          <div class="termhead">
+            <i></i>
+            <i></i>
+            <i></i>
+            <small>antonio_profile.sh</small>
+          </div>
+          <div class="termbody">
+            <p>
+              <span class="green">antonio</span>@it-profile:~$ whoami
+            </p>
+            <h3>
+              IT Technician
+              <br />
+              Systems & Support
+            </h3>
+            <p class="comment"># Áreas principales</p>
+            <p>
+              <b>OS:</b> Windows / Linux
+            </p>
+            <p>
+              <b>IT:</b> Hardware / Networks
+            </p>
+            <p>
+              <b>Security:</b> IT Security
+            </p>
+            <p>
+              <b>Web:</b> HTML / CSS / SASS
+            </p>
+            <p class="green">
+              $ <span class="blink">▋</span>
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section" id="perfil">
+      <div class="container two">
+        <div>
+          <span class="eyebrow">01 / PERFIL PROFESIONAL</span>
+          <h2 class="title">Sobre mí</h2>
+          <p class="big">Informática, creatividad y soluciones tecnológicas.</p>
+        </div>
+        <div class="copy">
+          <p>
+            Soy Antonio Oyuela, un profesional con formación en el ámbito de la
+            informática y las artes gráficas. Mi trayectoria formativa abarca
+            sistemas microinformáticos, montaje y reparación de ordenadores,
+            redes, seguridad informática, programación, bases de datos y
+            tecnologías web.
+          </p>
+          <p>
+            Me considero una persona creativa, responsable y con interés por
+            seguir aprendiendo. Me motiva resolver problemas técnicos, trabajar
+            con herramientas digitales y encontrar soluciones prácticas. Busco
+            oportunidades relacionadas con soporte técnico, microinformática,
+            sistemas, redes y helpdesk.
+          </p>
+          <div class="stats">
+            <div>
+              <b>IT</b>
+              <span>Soporte y sistemas</span>
+            </div>
+            <div>
+              <b>NET</b>
+              <span>Redes y comunicaciones</span>
+            </div>
+            <div>
+              <b>WEB</b>
+              <span>Desarrollo web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="habilidades">
+      <div class="container">
+        <span class="eyebrow">02 / CONOCIMIENTOS</span>
+        <h2 class="title">Habilidades técnicas</h2>
+        <div class="skills">
+          <article class="card">
+            <h3>Áreas y tecnologías</h3>
+            <p class="muted">
+              Conocimientos adquiridos mediante formación y prácticas.
+            </p>
+            {skills.map((s) => (
+              <span class="pill">{s}</span>
+            ))}
+          </article>
+          <div class="skillcards">
+            <article class="card">
+              <b class="icon">▣</b>
+              <h3>Sistemas y hardware</h3>
+              <p class="muted">
+                Sistemas microinformáticos, instalación, montaje y reparación de
+                equipos.
+              </p>
+            </article>
+            <article class="card">
+              <b class="icon">⌘</b>
+              <h3>Redes y comunicaciones</h3>
+              <p class="muted">
+                Redes departamentales y sistemas de comunicaciones de voz y
+                datos.
+              </p>
+            </article>
+            <article class="card wide">
+              <b class="icon">⌁</b>
+              <h3>Seguridad y desarrollo</h3>
+              <p class="muted">
+                Seguridad informática, programación, bases de datos y desarrollo
+                web.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="formacion">
+      <div class="container">
+        <span class="eyebrow">03 / FORMACIÓN</span>
+        <h2 class="title">Estudios de informática</h2>
+        <div class="timeline">
+          {studies.map((s) => (
+            <article>
+              <small>{s[1]}</small>
+              <h3>{s[0]}</h3>
+              <p class="muted">{s[2]}</p>
+            </article>
+          ))}
+        </div>
+        <div class="extra">
+          <h3>Otros cursos de informática</h3>
+          <div class="coursegrid">
+            {courses.map((c) => (
+              <div class="course">✓ {c}</div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="proyectos">
+      <div class="container">
+        <span class="eyebrow">04 / ÁREAS DE TRABAJO</span>
+        <h2 class="title">Proyectos y conocimientos prácticos</h2>
+        <p class="muted">
+          Ámbitos en los que he adquirido conocimientos durante mi formación.
+        </p>
+        <div class="projects">
+          {projects.map((p) => (
+            <article class="card project">
+              <strong>{p[0]}</strong>
+              <h3>{p[1]}</h3>
+              <p class="muted">{p[2]}</p>
+              {p[3].map((t) => (
+                <span class="tag">{t}</span>
+              ))}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="section" id="otros-estudios">
+      <div class="container two">
+        <div>
+          <span class="eyebrow">05 / FORMACIÓN COMPLEMENTARIA</span>
+          <h2 class="title">Artes gráficas y multimedia</h2>
+          <p class="muted">
+            Formación adicional que complementa el perfil tecnológico con
+            conocimientos de diseño, edición y producción de contenido digital.
+          </p>
+        </div>
+        <div class="creativelist">
+          {creative.map((c) => (
+            <div class="creativeitem">✦ {c}</div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">06 / COMPETENCIAS</span>
+        <h2 class="title">Competencias personales</h2>
+        <div class="values">
+          <div>
+            <b>↗</b>
+            <span>
+              <strong>Resolución de problemas</strong>
+              <small>
+                Interés por identificar incidencias y encontrar soluciones.
+              </small>
+            </span>
+          </div>
+          <div>
+            <b>◎</b>
+            <span>
+              <strong>Aprendizaje continuo</strong>
+              <small>
+                Motivación para ampliar conocimientos y aprender herramientas.
+              </small>
+            </span>
+          </div>
+          <div>
+            <b>✓</b>
+            <span>
+              <strong>Creatividad y atención al detalle</strong>
+              <small>Capacidad para combinar tecnología y creatividad.</small>
+            </span>
+          </div>
+          <div>
+            <b>⌂</b>
+            <span>
+              <strong>Organización y colaboración</strong>
+              <small>
+                Responsabilidad y disposición para trabajar en equipo.
+              </small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <div>
+          <span class="eyebrow">07 / CONTACTO</span>
+          <h2 class="title">¿Hablamos?</h2>
+          <p class="muted">
+            Interesado en oportunidades profesionales relacionadas con soporte
+            técnico, sistemas, redes, microinformática y desarrollo web.
+          </p>
+        </div>
+        <div class="links">
+          <a href="mailto:antoniooyuelasanchez@gmail.com">
+            ✉ antoniooyuelasanchez@gmail.com
+          </a>
+          <a href="tel:+34628199112">☎ 628 199 112</a>
+          <span>⌖ Madrid, España</span>
+          <span>
+            Portfolios: https://oyuhetico.vercel.app/ |
+            https://oyuos.vercel.app/
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container foot">
+      <span>© {new Date().getFullYear()} Antonio Oyuela</span>
+      <span>Currículum web desarrollado con Astro</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+  <script>
+    document
+      .querySelector("#print")
+      ?.addEventListener("click", () => window.print());
+    const menu = document.querySelector(".menu");
+    const nav = document.querySelector("nav");
+    menu?.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      menu.setAttribute("aria-expanded", String(open));
+    });
+    nav?.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => {
+        nav.classList.remove("open");
+        menu?.setAttribute("aria-expanded", "false");
+      }),
+    );
+  </script>
+  <style>
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: #101b35e8;
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid #ffffff18;
+    }
+    .navin {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font:
+        700 1.1rem "Space Grotesk",
+        sans-serif;
+    }
+    .brand b {
+      display: inline-grid;
+      place-items: center;
+      background: #72e6c1;
+      color: #10203b;
+      border-radius: 8px;
+      width: 30px;
+      height: 30px;
+      margin-right: 7px;
+    }
+    .nav nav {
+      display: flex;
+      gap: 22px;
+      color: #b5c0d8;
+      font-size: 0.86rem;
+    }
+    .nav nav a:hover {
+      color: #72e6c1;
+    }
+    .menu {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 1.4rem;
+    }
+    .hero {
+      padding: 90px 0 82px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
+      align-items: center;
+    }
+    h1 {
+      font:
+        700 clamp(3.5rem, 8vw, 6rem)/0.95 "Space Grotesk",
+        sans-serif;
+      letter-spacing: -0.075em;
+      margin: 22px 0 16px;
+    }
+    .gradient {
+      background: linear-gradient(90deg, #72e6c1, #9bb9ff);
+      color: transparent;
+      background-clip: text;
+    }
+    .hero h2 {
+      font:
+        600 clamp(1.1rem, 2.5vw, 1.5rem) "Space Grotesk",
+        sans-serif;
+    }
+    .intro {
+      color: #b1bdd5;
+      line-height: 1.8;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 26px 0;
+    }
+    .quick {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: #aab6d1;
+      font-size: 0.82rem;
+      margin-top: 26px;
+    }
+    .terminal {
+      border: 1px solid #72e6c14a;
+      background: #101d35;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 25px 70px #050b1b66;
+      transform: rotate(1deg);
+    }
+    .termhead {
+      height: 42px;
+      background: #ffffff0b;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0 15px;
+    }
+    .termhead i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #f87171;
+    }
+    .termhead i:nth-child(2) {
+      background: #fbbf24;
+    }
+    .termhead i:nth-child(3) {
+      background: #72e6c1;
+    }
+    .termhead small {
+      margin-left: auto;
+      color: #93a2c1;
+    }
+    .termbody {
+      padding: 22px 27px;
+      font:
+        0.85rem/1.9 ui-monospace,
+        monospace;
+      color: #c4cee2;
+    }
+    .termbody h3 {
+      font:
+        600 1.65rem/1.2 "Space Grotesk",
+        sans-serif;
+      color: #f4f7ff;
+    }
+    .green {
+      color: #72e6c1;
+    }
+    .comment {
+      color: #8292b2;
+    }
+    .blink {
+      animation: blink 1s steps(2) infinite;
+    }
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+    .two {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 60px;
+    }
+    .big {
+      font:
+        600 1.45rem/1.4 "Space Grotesk",
+        sans-serif;
+    }
+    .copy {
+      color: #b1bdd5;
+      line-height: 1.85;
+    }
+    .stats {
+      display: flex;
+      gap: 28px;
+      margin-top: 24px;
+    }
+    .stats div {
+      display: grid;
+      gap: 3px;
+    }
+    .stats b {
+      font:
+        700 1.7rem "Space Grotesk",
+        sans-serif;
+      color: #72e6c1;
+    }
+    .stats span {
+      font-size: 0.78rem;
+      color: #aab6d1;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 17px;
+    }
+    .card h3 {
+      font:
+        600 1.08rem "Space Grotesk",
+        sans-serif;
+      margin: 0 0 9px;
+    }
+    .skillcards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+    .skillcards .wide {
+      grid-column: 1/-1;
+    }
+    .skillcards p {
+      font-size: 0.87rem;
+      line-height: 1.6;
+    }
+    .icon {
+      display: inline-grid;
+      place-items: center;
+      width: 33px;
+      height: 33px;
+      border-radius: 9px;
+      background: #72e6c11c;
+      color: #72e6c1;
+      margin-bottom: 13px;
+    }
+    .timeline {
+      border-left: 1px solid #72e6c155;
+      margin-left: 8px;
+      padding-left: 28px;
+      display: grid;
+      gap: 20px;
+      max-width: 850px;
+    }
+    .timeline article {
+      position: relative;
+    }
+    .timeline article:before {
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #72e6c1;
+      box-shadow: 0 0 0 5px #72e6c11c;
+    }
+    .timeline small {
+      color: #72e6c1;
+      letter-spacing: 0.07em;
+      font-weight: 700;
+    }
+    .timeline h3 {
+      font:
+        600 1.05rem "Space Grotesk",
+        sans-serif;
+      margin: 7px 0 3px;
+    }
+    .timeline p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+    .extra {
+      margin-top: 38px;
+    }
+    .extra h3 {
+      font:
+        600 1.2rem "Space Grotesk",
+        sans-serif;
+      margin-bottom: 14px;
+    }
+    .coursegrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .course,
+    .creativeitem {
+      padding: 12px 14px;
+      border: 1px solid #ffffff20;
+      border-radius: 10px;
+      color: #c0cbe0;
+      font-size: 0.87rem;
+      line-height: 1.5;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 24px;
+    }
+    .project > strong {
+      font:
+        700 2rem "Space Grotesk",
+        sans-serif;
+      color: #72e6c18c;
+    }
+    .project h3 {
+      margin-top: 15px;
+    }
+    .project p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      min-height: 90px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      color: #c2cce0;
+      background: #aab6d11c;
+      padding: 5px 8px;
+      border-radius: 6px;
+      margin: 3px;
+    }
+    .creativelist {
+      display: grid;
+      gap: 10px;
+    }
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px 35px;
+    }
+    .values > div {
+      display: flex;
+      gap: 15px;
+    }
+    .values b {
+      display: grid;
+      place-items: center;
+      flex: 0 0 39px;
+      height: 39px;
+      border-radius: 11px;
+      background: #72e6c11c;
+      color: #72e6c1;
+    }
+    .values span {
+      display: grid;
+      gap: 5px;
+    }
+    .values small {
+      color: #aab6d1;
+      line-height: 1.5;
+    }
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      padding: 34px;
+      border: 1px solid #72e6c14a;
+      border-radius: 20px;
+      background: linear-gradient(120deg, #203d58cc, #192849cc);
+    }
+    .links {
+      display: grid;
+      gap: 13px;
+      align-content: center;
+      color: #d2dbee;
+    }
+    footer {
+      border-top: 1px solid #ffffff18;
+      padding: 22px 0;
+      color: #91a0bd;
+      font-size: 0.78rem;
+    }
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 820px) {
+      .hero-grid,
+      .two,
+      .skills,
+      .contact {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .hero {
+        padding: 62px 0;
+      }
+      .terminal {
+        max-width: 540px;
+      }
+      .projects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 620px) {
+      .nav nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: #152443;
+        flex-direction: column;
+        gap: 17px;
+      }
+      .nav nav.open {
+        display: flex;
+      }
+      .menu {
+        display: block;
+      }
+      .projects,
+      .values,
+      .skillcards,
+      .coursegrid {
+        grid-template-columns: 1fr;
+      }
+      .skillcards .wide {
+        grid-column: auto;
+      }
+      .quick {
+        display: grid;
+        gap: 8px;
+      }
+      .contact {
+        padding: 22px 18px;
+      }
+      .stats {
+        gap: 16px;
+      }
+    }
+    @media print {
+      .nav {
+        display: none;
+      }
+      .hero {
+        padding: 22px 0;
+      }
+      .terminal {
+        transform: none;
+      }
+      .projects {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .contact {
+        background: #fff;
+      }
+      .creativeitem,
+      .course {
+        color: #263247;
+        border-color: #ddd;
+      }
+    }
+  </style>
+</Layout>
